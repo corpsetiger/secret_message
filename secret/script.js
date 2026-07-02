@@ -22,7 +22,7 @@ const timer = document.getElementById("timer");
 function updateCountdown() {
 
     const now = new Date().getTime();
-    const distance = now - now;
+    const distance = unlockDate - now;
 
     if (distance <= 0) {
         countdown.style.display = "none";
